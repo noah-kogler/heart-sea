@@ -6,8 +6,8 @@ import React from 'react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Throw Your Heart Into The Sea',
-  description: 'A Movie by Christian Kogler.',
+  title: 'Wirf dein Herz ins Meer',
+  description: 'Ein Film von Eric Schirl und Christian Kogler.',
 };
 
 export default function RootLayout({
