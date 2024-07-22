@@ -1,24 +1,29 @@
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '../globals.css';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Wirf dein Herz ins Meer',
-  description: 'Ein Film von Eric Schirl und Christian Kogler.',
+type LocaleLayoutProps = {
+  params: { locale: string };
 };
+
+export async function generateMetadata({ params: { locale } }: LocaleLayoutProps) {
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export default async function LocaleLayout({
   children,
   params: { locale },
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+}: Readonly<PropsWithChildren<LocaleLayoutProps>>) {
   const messages = await getMessages();
   return (
     <html lang={locale}>
