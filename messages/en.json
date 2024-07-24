@@ -18,7 +18,8 @@
     "name": "Christian Kogler",
     "address": "Kaplanhofstraße 40",
     "city": "4020 Linz",
-    "country": "Austria"
+    "country": "Austria",
+    "emailLinkLabel": "Email"
   },
   "Sponsors": {
     "title": "Sponsoren",
@@ -26,5 +27,15 @@
     "linzTitle": "Linz Kultur",
     "ooeTitle": "Land Oberösterreich Kultur",
     "phOoeTitle": "Pädagogische Hochschule Oberösterreich"
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "emailLabel": "Email",
+    "emailPlaceholder": "jane@doe.com",
+    "nameLabel": "Name",
+    "namePlaceholder": "Jane Doe",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Dear Christian, ...",
+    "sendLabel": "Send"
   }
 }

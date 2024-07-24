@@ -2,8 +2,10 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 import React, { PropsWithChildren } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
+import { NextUIProvider } from '@nextui-org/react';
 import { getMessages } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,7 +30,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <NextUIProvider>
+            <header className="absolute right-4 top-4">
+              <LanguageSwitcher />
+            </header>
+            {children}
+          </NextUIProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

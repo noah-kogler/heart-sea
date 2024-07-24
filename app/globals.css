@@ -16,11 +16,15 @@
   }
 }
 
+html {
+  height:100%;
+}
+
 body {
+  min-height: 100%;
   color: rgb(var(--foreground-rgb));
   background: url('/blue-noise.jpg') no-repeat #191f2f;
-  background-size: cover;
-
+  background-size: 100% auto;
 }
 
 @layer utilities {

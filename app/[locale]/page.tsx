@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { useLocale, useTranslations } from 'next-intl';
-import LanguageLink from '@/components/LanguageLink';
+import { useTranslations } from 'next-intl';
 import Trailer from '@/components/Trailer';
 import Contact from '@/components/Contact';
 import Credits from '@/components/Credits';
@@ -9,14 +8,9 @@ import Sponsors from '@/components/Sponsors';
 
 export default function Home() {
   const t = useTranslations('Home');
-  const locale = useLocale();
 
   return (
     <>
-      <header className="absolute right-4 top-4">
-        <LanguageLink locale="en" active={locale === 'en'} /> |{' '}
-        <LanguageLink locale="de" active={locale === 'de'} />
-      </header>
       <main className="bg-blue-noise">
         <div className="m-auto flex flex-col items-center">
           <h2 className="mb-24 mt-8 text-center text-xl">
