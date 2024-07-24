@@ -4,6 +4,8 @@ import { useLocale, useTranslations } from 'next-intl';
 import LanguageLink from '@/components/LanguageLink';
 import Trailer from '@/components/Trailer';
 import Contact from '@/components/Contact';
+import Credits from '@/components/Credits';
+import Sponsors from '@/components/Sponsors';
 
 export default function Home() {
   const t = useTranslations('Home');
@@ -29,6 +31,8 @@ export default function Home() {
           <p className="mt-16 max-w-6xl text-center">{t('text')}</p>
           <Trailer />
           <Contact />
+          <Credits />
+          <Sponsors />
         </div>
       </main>
     </>

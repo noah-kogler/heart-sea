@@ -19,5 +19,12 @@
     "address": "Kaplanhofstraße 40",
     "city": "4020 Linz",
     "country": "Austria"
+  },
+  "Sponsors": {
+    "title": "Sponsoren",
+    "iocdfTitle": "International OCD Foundation",
+    "linzTitle": "Linz Kultur",
+    "ooeTitle": "Land Oberösterreich Kultur",
+    "phOoeTitle": "Pädagogische Hochschule Oberösterreich"
   }
 }
