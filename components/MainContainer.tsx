@@ -5,11 +5,13 @@ export interface ContentContainerProps {
   className?: string;
 }
 
-export default function ContentContainer({
+export default function MainContainer({
   className,
   children,
 }: PropsWithChildren<ContentContainerProps>) {
   return (
-    <main className={classNames('m-auto flex max-w-5xl flex-col px-8', className)}>{children}</main>
+    <main className={classNames('mx-auto flex max-w-5xl flex-col px-8 py-24', className)}>
+      {children}
+    </main>
   );
 }

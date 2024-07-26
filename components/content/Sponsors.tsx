@@ -8,12 +8,16 @@ import Prose from '@/components/Prose';
 export default function Sponsors() {
   const t = useTranslations('Sponsors');
   return (
-    <div className="my-16">
-      <Prose className="mb-8 text-center">
+    <>
+      <Prose className="mb-8 mt-24 text-center">
         <Heading>{t('title')}</Heading>
       </Prose>
-      <div className="bg-bl flex flex-col items-center gap-16 rounded-lg bg-white bg-opacity-85 p-4 sm:flex-row">
-        <Link href="https://iocdf.org/" title={t('iocdfTitle')}>
+      <div className="grid grid-cols-1 place-items-stretch gap-8 sm:grid-cols-4">
+        <Link
+          href="https://iocdf.org/"
+          title={t('iocdfTitle')}
+          className="flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+        >
           <Image
             src="/sponsors/iocdf.svg"
             alt={t('iocdfTitle')}
@@ -22,7 +26,11 @@ export default function Sponsors() {
             height={196}
           />
         </Link>
-        <Link href="https://www.linz.at/kultur/index.php" title={t('linzTitle')}>
+        <Link
+          href="https://www.linz.at/kultur/index.php"
+          title={t('linzTitle')}
+          className="flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+        >
           <Image
             src="/sponsors/linz.svg"
             alt={t('linzTitle')}
@@ -31,7 +39,11 @@ export default function Sponsors() {
             height={75}
           />
         </Link>
-        <Link href="https://www.land-oberoesterreich.gv.at/kultur.htm" title={t('ooeTitle')}>
+        <Link
+          href="https://www.land-oberoesterreich.gv.at/kultur.htm"
+          title={t('ooeTitle')}
+          className="flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+        >
           <Image
             src="/sponsors/ooe.svg"
             alt={t('ooeTitle')}
@@ -40,7 +52,11 @@ export default function Sponsors() {
             height={176}
           />
         </Link>
-        <Link href="https://ph-ooe.at/" title={t('phOoeTitle')}>
+        <Link
+          href="https://ph-ooe.at/"
+          title={t('phOoeTitle')}
+          className="flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+        >
           <Image
             src="/sponsors/ph-ooe.svg"
             alt={t('phOoeTitle')}
@@ -50,6 +66,6 @@ export default function Sponsors() {
           />
         </Link>
       </div>
-    </div>
+    </>
   );
 }

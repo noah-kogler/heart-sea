@@ -6,7 +6,5 @@ import Prose from '@/components/Prose';
 
 export default function Credits() {
   const locale = useLocale();
-  return (
-    <Prose className={'mt-16 text-center'}>{locale === 'de' ? <CreditsDe /> : <CreditsEn />}</Prose>
-  );
+  return <Prose className="text-center">{locale === 'de' ? <CreditsDe /> : <CreditsEn />}</Prose>;
 }
