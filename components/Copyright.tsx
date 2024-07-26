@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
 import React from 'react';
-import MainContainer from '@/components/MainContainer';
 
 export default function Copyright() {
   const t = useTranslations('Copyright');

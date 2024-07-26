@@ -7,9 +7,6 @@ import { GoogleReCaptcha, GoogleReCaptchaProvider } from 'react-google-recaptcha
 import ContactForm from '@/components/content/ContactForm';
 import MainContainer from '@/components/MainContainer';
 import Prose from '@/components/Prose';
-import { Link } from '@/navigation';
-import Icon from '@mdi/react';
-import { mdiChevronLeft } from '@mdi/js';
 import useMountedCheck from '@/hooks/useMountedCheck';
 
 export default function ContactPage() {
