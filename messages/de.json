@@ -46,5 +46,13 @@
     "address": "Kaplanhofstraße 40",
     "city": "4020 Linz",
     "country": "Österreich"
+  },
+  "Header": {
+    "homeLabel": "Home",
+    "trailerLabel": "Trailer",
+    "creditsLabel": "Credits",
+    "contactLabel": "Kontakt",
+    "closeMenuLabel": "Menü öffnen",
+    "openMenuLabel": "Menü schließen"
   }
 }

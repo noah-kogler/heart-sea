@@ -11,16 +11,18 @@ import {
 } from '@nextui-org/react';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { Link, usePathname } from '@/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
+  const t = useTranslations('Header');
   const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false);
   const pathname = usePathname();
 
   const menuItems = [
-    { label: 'Home', href: '/' },
-    { label: 'Trailer', href: '/trailer' },
-    { label: 'Credits', href: '/credits' },
-    { label: 'Contact', href: '/contact' },
+    { label: t('homeLabel'), href: '/' },
+    { label: t('trailerLabel'), href: '/trailer' },
+    { label: t('creditsLabel'), href: '/credits' },
+    { label: t('contactLabel'), href: '/contact' },
   ];
 
   return (
@@ -33,7 +35,7 @@ export default function Header() {
       >
         <NavbarContent>
           <NavbarMenuToggle
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isMenuOpen ? t('closeMenuLabel') : t('openMenuLabel')}
             className="sm:hidden"
           />
         </NavbarContent>
