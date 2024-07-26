@@ -27,14 +27,14 @@ export default function ContactForm({ captchaToken }: ContactFormProps) {
           isInvalid={state.validationErrors?.includes('email')}
           errorMessage={t('emailError')}
           isRequired
-          className="mt-8 max-w-md"
+          className="mt-8"
         />
         <Input
           type="text"
           name="name"
           label={t('nameLabel')}
           placeholder={t('namePlaceholder')}
-          className="mt-8 max-w-md"
+          className="mt-8"
         />
         <Textarea
           name="message"
@@ -42,7 +42,7 @@ export default function ContactForm({ captchaToken }: ContactFormProps) {
           placeholder={t('messagePlaceholder')}
           isInvalid={state.validationErrors?.includes('message')}
           errorMessage={t('messageError')}
-          className="mt-8 max-w-md"
+          className="mt-8"
           isRequired
         />
         <SubmitButton />

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 export interface HeadingProps {
-  children: React.ReactNode;
+  className?: string;
 }
 
-export default function Heading({ children }: HeadingProps) {
-  return <h3 className="text-center text-lg font-bold">{children}</h3>;
+export default function Heading({ className, children }: PropsWithChildren<HeadingProps>) {
+  return <h3 className={className}>{children}</h3>;
 }

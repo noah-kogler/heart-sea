@@ -15,10 +15,6 @@
   },
   "Contact": {
     "title": "Contact",
-    "name": "Christian Kogler",
-    "address": "Kaplanhofstraße 40",
-    "city": "4020 Linz",
-    "country": "Austria",
     "emailLinkLabel": "Email"
   },
   "Sponsors": {
@@ -29,7 +25,8 @@
     "phOoeTitle": "Pädagogische Hochschule Oberösterreich"
   },
   "ContactPage": {
-    "title": "Contact"
+    "title": "Contact",
+    "backLinkTitle": "Back to main page"
   },
   "ContactForm": {
     "emailLabel": "Email",
@@ -46,5 +43,12 @@
   "SubmitButton": {
     "sendLabel": "Send",
     "sending": "Sending..."
+  },
+  "Copyright": {
+    "title": "©",
+    "name": "Christian Kogler",
+    "address": "Kaplanhofstraße 40",
+    "city": "4020 Linz",
+    "country": "Austria"
   }
 }

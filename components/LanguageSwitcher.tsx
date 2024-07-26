@@ -17,7 +17,11 @@ export default function LanguageSwitcher() {
           {locale === currentLocale ? (
             locale
           ) : (
-            <Link href={pathname} locale={locale} className="underline">
+            <Link
+              href={pathname}
+              locale={locale}
+              className="font-bold underline opacity-75 hover:opacity-100"
+            >
               {locale}
             </Link>
           )}

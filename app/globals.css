@@ -21,7 +21,10 @@ html {
 }
 
 body {
-  min-height: 100%;
+  /*min-height: 100%;*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: rgb(var(--foreground-rgb));
   background: url('/blue-noise.jpg') no-repeat #191f2f;
   background-size: 100% auto;

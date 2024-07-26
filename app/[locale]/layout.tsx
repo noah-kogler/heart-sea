@@ -6,6 +6,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import { getMessages } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import Copyright from '@/components/Copyright';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -36,6 +37,9 @@ export default async function LocaleLayout({
               <LanguageSwitcher />
             </header>
             {children}
+            <footer>
+              <Copyright />
+            </footer>
           </NextUIProvider>
         </NextIntlClientProvider>
       </body>
