@@ -21,7 +21,7 @@ export default function Home() {
         <Image
           src="/bubble.png"
           alt={t('subjectImageAlt')}
-          className="w-[500px]"
+          className="animate-pulse-slow w-[500px]"
           width={807}
           height={762}
           priority

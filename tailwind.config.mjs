@@ -10,6 +10,9 @@ const config = {
             maxWidth: 'none',
           }
         }
+      },
+      animation: {
+        'pulse-slow': 'pulse 10s linear infinite',
       }
     },
   },

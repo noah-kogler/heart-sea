@@ -3,6 +3,8 @@ import { useTranslations } from 'next-intl';
 import Heading from '@/components/Heading';
 import Prose from '@/components/Prose';
 
+const playerScriptUrl = 'https://player.vimeo.com/api/player.js';
+
 export default function Trailer() {
   const t = useTranslations('Trailer');
 
@@ -17,7 +19,7 @@ export default function Trailer() {
         title={t('title')}
         className="mt-8 aspect-video w-full"
       />
-      <script src="https://player.vimeo.com/api/player.js" defer />
+      <script src={playerScriptUrl} defer />
     </div>
   );
 }
