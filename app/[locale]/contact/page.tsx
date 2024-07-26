@@ -1,33 +1,28 @@
-import { Button, Input, Textarea } from '@nextui-org/react';
+'use client';
+
+import React, { useState } from 'react';
 import Heading from '@/components/Heading';
 import { useTranslations } from 'next-intl';
+import { GoogleReCaptcha, GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
+import ContactForm from '@/components/ContactForm';
 
 export default function ContactPage() {
   const t = useTranslations('ContactPage');
+  const [captchaToken, setCaptchaToken] = useState<string>();
+
+  function onCaptchaVerify(token: string) {
+    if (!captchaToken) {
+      setCaptchaToken(token);
+    }
+  }
 
   return (
-    <main>
-      <Heading>{t('title')}</Heading>
-      <Input
-        type="email"
-        label={t('emailLabel')}
-        placeholder={t('emailPlaceholder')}
-        isRequired
-        className="mt-8 max-w-md"
-      />
-      <Input
-        type="text"
-        label={t('nameLabel')}
-        placeholder={t('namePlaceholder')}
-        className="mt-8 max-w-md"
-      />
-      <Textarea
-        label={t('messageLabel')}
-        placeholder={t('messagePlaceholder')}
-        className="mt-8 max-w-md"
-        isRequired
-      />
-      <Button className="mt-8">{t('sendLabel')}</Button>
-    </main>
+    <GoogleReCaptchaProvider reCaptchaKey="6Ldb0RgqAAAAAPOXW-Rflqs1uttTDgY2xtKRv7HW">
+      <main>
+        <Heading>{t('title')}</Heading>
+        <ContactForm captchaToken={captchaToken} />
+        <GoogleReCaptcha onVerify={onCaptchaVerify} />
+      </main>
+    </GoogleReCaptchaProvider>
   );
 }

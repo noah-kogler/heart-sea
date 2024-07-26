@@ -29,13 +29,22 @@
     "phOoeTitle": "Pädagogische Hochschule Oberösterreich"
   },
   "ContactPage": {
-    "title": "Contact",
+    "title": "Contact"
+  },
+  "ContactForm": {
     "emailLabel": "Email",
     "emailPlaceholder": "jane@doe.com",
+    "emailError": "Please enter a valid email!",
     "nameLabel": "Name",
     "namePlaceholder": "Jane Doe",
     "messageLabel": "Message",
     "messagePlaceholder": "Dear Christian, ...",
-    "sendLabel": "Send"
+    "messageError": "Please enter a message!",
+    "successMessage": "Thank you! Your message was sent.",
+    "errorMessage": "Sorry, your message couldn't get sent."
+  },
+  "SubmitButton": {
+    "sendLabel": "Send",
+    "sending": "Sending..."
   }
 }

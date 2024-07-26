@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
   return (
     <span className="uppercase">
       {locales.map((locale, index) => (
-        <>
+        <span key={locale}>
           {index !== 0 && <span> | </span>}
           {locale === currentLocale ? (
             locale
@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
               {locale}
             </Link>
           )}
-        </>
+        </span>
       ))}
     </span>
   );

@@ -29,13 +29,22 @@
     "phOoeTitle": "Pädagogische Hochschule Oberösterreich"
   },
   "ContactPage": {
-    "title": "Kontakt",
+    "title": "Kontakt"
+  },
+  "ContactForm": {
     "emailLabel": "E-Mail",
     "emailPlaceholder": "marta@muster.com",
+    "emailError": "Bitte geben Sie eine gültige E-Mail-Adresse ein!",
     "nameLabel": "Name",
     "namePlaceholder": "Marta Muster",
     "messageLabel": "Nachricht",
     "messagePlaceholder": "Lieber Christian, ...",
-    "sendLabel": "Senden"
+    "messageError": "Bitte geben Sie eine Nachricht ein!",
+    "successMessage": "Vielen Dank! Ihre Nachricht wurde versandt.",
+    "errorMessage": "Entschuldigung, ihre Nachricht konnte nicht versandt werden."
+  },
+  "SubmitButton": {
+    "sendLabel": "Senden",
+    "sending": "Sendet..."
   }
 }

@@ -15,15 +15,19 @@
     "@next/mdx": "^14.2.4",
     "@nextui-org/react": "^2.4.6",
     "@types/mdx": "^2.0.13",
+    "email-validator": "^2.0.4",
     "framer-motion": "^11.3.17",
     "next": "14.2.4",
     "next-intl": "^3.17.2",
+    "nodemailer": "^6.9.14",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-google-recaptcha-v3": "^1.10.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^7.16.1",
