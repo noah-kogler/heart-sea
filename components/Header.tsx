@@ -43,13 +43,7 @@ export default function Header() {
         <NavbarContent className="hidden gap-8 sm:flex" justify="center">
           {menuItems.map((item, index) => (
             <NavbarItem key={`${item}-${index}`}>
-              {pathname === item.href ? (
-                <span>{item.label}</span>
-              ) : (
-                <Link href={item.href} className="underline opacity-75 hover:opacity-100">
-                  {item.label}
-                </Link>
-              )}
+              <NavBarLink label={item.label} href={item.href} active={pathname === item.href} />
             </NavbarItem>
           ))}
         </NavbarContent>
@@ -61,13 +55,27 @@ export default function Header() {
         <NavbarMenu>
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link className="w-full" href={item.href} onMouseUp={() => setIsMenuOpen()}>
-                {item.label}
-              </Link>
+              <NavBarLink label={item.label} href={item.href} active={pathname === item.href} />
             </NavbarMenuItem>
           ))}
         </NavbarMenu>
       </Navbar>
     </header>
+  );
+}
+
+type NavBarLinkProps = {
+  label: string;
+  href: string;
+  active: boolean;
+};
+
+function NavBarLink({ label, href, active }: NavBarLinkProps) {
+  return active ? (
+    <span>{label}</span>
+  ) : (
+    <Link href={href} className="underline opacity-75 hover:opacity-100">
+      {label}
+    </Link>
   );
 }

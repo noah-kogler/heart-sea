@@ -10,12 +10,7 @@ export default function MainContainer({
   children,
 }: PropsWithChildren<ContentContainerProps>) {
   return (
-    <main
-      className={classNames(
-        'mx-auto flex max-w-5xl flex-col px-8 py-24 text-foreground dark',
-        className,
-      )}
-    >
+    <main className={classNames('mx-auto flex max-w-5xl flex-col px-8 py-24', className)}>
       {children}
     </main>
   );

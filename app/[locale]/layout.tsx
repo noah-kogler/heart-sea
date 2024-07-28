@@ -7,6 +7,7 @@ import { getMessages } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import Copyright from '@/components/Copyright';
 import Header from '@/components/Header';
+import classNames from 'classnames';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -35,17 +36,17 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
-          <NextUIProvider>
+      <NextIntlClientProvider messages={messages}>
+        <NextUIProvider>
+          <body className={classNames(inter.className, 'text-foreground dark')}>
             <Header />
             {children}
             <footer>
               <Copyright />
             </footer>
-          </NextUIProvider>
-        </NextIntlClientProvider>
-      </body>
+          </body>
+        </NextUIProvider>
+      </NextIntlClientProvider>
     </html>
   );
 }
