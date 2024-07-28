@@ -10,10 +10,8 @@ export default function Home() {
   return (
     <>
       <MainContainer className="items-center">
-        <h1>
-          <Image src="/logo.svg" alt={t('title')} width={1017} height={61} />
-        </h1>
-        <h2 className="mb-16 mt-8 text-center text-xl text-white">
+        <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
+        <h2 className="mb-16 mt-8 text-center font-serif text-2xl uppercase text-white">
           {t('subtitleIntro')}
           <br />
           {t('subtitleNames')}

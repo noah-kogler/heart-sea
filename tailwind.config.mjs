@@ -15,6 +15,9 @@ const config = {
         'pulse-slow': 'pulse 10s linear infinite',
       }
     },
+    fontFamily: {
+      'serif': 'the-seasons, serif'
+    }
   },
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',

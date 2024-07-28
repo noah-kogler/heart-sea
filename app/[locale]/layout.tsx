@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 import '../globals.css';
 import React, { PropsWithChildren } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
@@ -9,7 +9,7 @@ import Copyright from '@/components/Copyright';
 import Header from '@/components/Header';
 import classNames from 'classnames';
 
-const inter = Inter({ subsets: ['latin'] });
+const openSans = Open_Sans({ subsets: ['latin'] });
 
 type LocaleLayoutProps = {
   params: { locale: string };
@@ -36,7 +36,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <body className={classNames(inter.className, 'text-foreground dark')}>
+      <body className={classNames(openSans.className, 'text-foreground dark')}>
         <NextIntlClientProvider messages={messages}>
           <NextUIProvider>
             <Header />
