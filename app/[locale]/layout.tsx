@@ -21,11 +21,6 @@ export async function generateMetadata({ params: { locale } }: LocaleLayoutProps
   return {
     title: t('title'),
     description: t('description'),
-    // TODO remove when released!
-    robots: {
-      index: false,
-      follow: false,
-    },
   };
 }
 
