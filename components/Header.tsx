@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 import {
   Navbar,
   NavbarContent,
@@ -55,7 +55,12 @@ export default function Header() {
         <NavbarMenu>
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <NavBarLink label={item.label} href={item.href} active={pathname === item.href} />
+              <NavBarLink
+                label={item.label}
+                href={item.href}
+                active={pathname === item.href}
+                onMouseUp={() => setIsMenuOpen()}
+              />
             </NavbarMenuItem>
           ))}
         </NavbarMenu>
@@ -68,13 +73,14 @@ type NavBarLinkProps = {
   label: string;
   href: string;
   active: boolean;
+  onMouseUp?: MouseEventHandler<HTMLAnchorElement>;
 };
 
-function NavBarLink({ label, href, active }: NavBarLinkProps) {
+function NavBarLink({ label, href, active, onMouseUp }: NavBarLinkProps) {
   return active ? (
     <span>{label}</span>
   ) : (
-    <Link href={href} className="underline opacity-75 hover:opacity-100">
+    <Link href={href} className="underline opacity-75 hover:opacity-100" onMouseUp={onMouseUp}>
       {label}
     </Link>
   );
