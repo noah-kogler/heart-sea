@@ -26,7 +26,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="dark">
+    <header className="text-foreground dark">
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
@@ -58,7 +58,7 @@ export default function Header() {
             <LanguageSwitcher />
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu className="dark">
+        <NavbarMenu>
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link className="w-full" href={item.href} onMouseUp={() => setIsMenuOpen()}>

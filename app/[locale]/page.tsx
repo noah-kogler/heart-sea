@@ -13,7 +13,7 @@ export default function Home() {
         <h1>
           <Image src="/logo.svg" alt={t('title')} width={1017} height={61} />
         </h1>
-        <h2 className="mb-16 mt-8 text-center text-xl">
+        <h2 className="mb-16 mt-8 text-center text-xl text-white">
           {t('subtitleIntro')}
           <br />
           {t('subtitleNames')}
@@ -21,7 +21,7 @@ export default function Home() {
         <Image
           src="/bubble.png"
           alt={t('subjectImageAlt')}
-          className="animate-pulse-slow w-[500px]"
+          className="w-[500px] animate-pulse-slow"
           width={807}
           height={762}
           priority

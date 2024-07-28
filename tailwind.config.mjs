@@ -23,7 +23,7 @@ const config = {
   ],
   plugins: [
     typography,
-    nextui()
+    nextui(),
   ],
 };
 export default config;

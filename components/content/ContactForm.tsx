@@ -18,7 +18,7 @@ export default function ContactForm({ captchaToken }: ContactFormProps) {
   ) : (
     <>
       {(state.validationErrors || state.sendError) && <p>{t('errorMessage')}</p>}
-      <form action={formAction} className="flex flex-col">
+      <form action={formAction} className="flex flex-col light">
         <Input
           type="text"
           name="email"
