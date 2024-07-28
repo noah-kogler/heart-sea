@@ -41,7 +41,7 @@ export async function sendEmail(
     return { sendError: true };
   }
 
-  const url = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_KEY}&response=${captchaToken}`;
+  const url = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_PRIVATE_KEY}&response=${captchaToken}`;
   try {
     const response = await fetch(url, { method: 'post' });
     const result = await response.json();

@@ -14,10 +14,12 @@ export default function ContactForm({ captchaToken }: ContactFormProps) {
   const [state, formAction] = useFormState(sendEmail.bind(null, captchaToken), {});
 
   return state.success ? (
-    <p>{t('successMessage')}</p>
+    <p className="mt-8 text-center">{t('successMessage')}</p>
   ) : (
     <>
-      {(state.validationErrors || state.sendError) && <p>{t('errorMessage')}</p>}
+      {(state.validationErrors || state.sendError) && (
+        <p className="mt-8 text-center">{t('errorMessage')}</p>
+      )}
       <form action={formAction} className="flex flex-col light">
         <Input
           type="text"
