@@ -6,8 +6,8 @@ import Sponsors from '@/components/content/Sponsors';
 export default function CreditsPage() {
   return (
     <MainContainer>
-      <Credits />
       <Sponsors />
+      <Credits />
     </MainContainer>
   );
 }
