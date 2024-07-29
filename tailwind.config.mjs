@@ -12,7 +12,7 @@ const config = {
         }
       },
       animation: {
-        'pulse-slow': 'pulse 10s linear infinite',
+        'pulse-slow': 'pulse 6s linear infinite',
       }
     },
     fontFamily: {
