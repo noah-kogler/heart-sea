@@ -1,27 +1,25 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import Heading from '@/components/Heading';
 import { useTranslations } from 'next-intl';
-import ContactForm from '@/components/content/ContactForm';
 import MainContainer from '@/components/MainContainer';
 import Prose from '@/components/Prose';
-import dynamic from 'next/dynamic';
+import generateMetadataForPage, { LocaleLayoutProps } from '@/utils/generateMetadataForPage';
+import type { Metadata } from 'next';
+import ContactFormWithCaptcha from '@/components/ContactFormWithCaptcha';
 
-const Recaptcha = dynamic(() => import('@/components/Recaptcha'), {
-  ssr: false,
-});
+export async function generateMetadata(props: LocaleLayoutProps): Promise<Metadata> {
+  return generateMetadataForPage('contact', props);
+}
 
 export default function ContactPage() {
   const t = useTranslations('ContactPage');
-  const [captchaToken, setCaptchaToken] = useState<string>();
+
   return (
     <MainContainer>
       <Prose className="text-center">
         <Heading>{t('title')}</Heading>
       </Prose>
-      <ContactForm captchaToken={captchaToken} />
-      <Recaptcha setCaptchaToken={setCaptchaToken} />
+      <ContactFormWithCaptcha />
     </MainContainer>
   );
 }

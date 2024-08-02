@@ -6,6 +6,12 @@ import Prose from '@/components/Prose';
 import { mdiPlay } from '@mdi/js';
 import Icon from '@mdi/react';
 import Link from 'next/link';
+import generateMetadataForPage, { LocaleLayoutProps } from '@/utils/generateMetadataForPage';
+import type { Metadata } from 'next';
+
+export async function generateMetadata(props: LocaleLayoutProps): Promise<Metadata> {
+  return generateMetadataForPage('', props);
+}
 
 export default function Home() {
   const t = useTranslations('Home');
