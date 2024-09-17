@@ -12,16 +12,16 @@ export default function Sponsors() {
       <Prose className="mb-8 text-center">
         <Heading>{t('title')}</Heading>
       </Prose>
-      <div className="grid grid-cols-1 place-items-stretch gap-8 sm:grid-cols-4">
+      <div className="grid grid-cols-1 place-items-stretch gap-8 sm:grid-cols-3">
         <Link
           href="https://ph-ooe.at/"
           title={t('phOoeTitle')}
-          className="flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+          className="group flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
         >
           <Image
             src="/sponsors/ph-ooe.svg"
             alt={t('phOoeTitle')}
-            className="grayscale hover:grayscale-0"
+            className="grayscale group-hover:grayscale-0"
             width={293}
             height={192}
           />
@@ -29,12 +29,12 @@ export default function Sponsors() {
         <Link
           href="https://www.land-oberoesterreich.gv.at/kultur.htm"
           title={t('ooeTitle')}
-          className="flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+          className="group flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
         >
           <Image
             src="/sponsors/ooe.svg"
             alt={t('ooeTitle')}
-            className="grayscale hover:grayscale-0"
+            className="grayscale group-hover:grayscale-0"
             width={468}
             height={176}
           />
@@ -42,12 +42,12 @@ export default function Sponsors() {
         <Link
           href="https://www.linz.at/kultur/index.php"
           title={t('linzTitle')}
-          className="flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+          className="group flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
         >
           <Image
             src="/sponsors/linz.svg"
             alt={t('linzTitle')}
-            className="opacity-50 grayscale hover:opacity-100 hover:grayscale-0"
+            className="opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0"
             width={365}
             height={75}
           />
@@ -55,14 +55,40 @@ export default function Sponsors() {
         <Link
           href="https://iocdf.org/"
           title={t('iocdfTitle')}
-          className="flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+          className="group flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
         >
           <Image
             src="/sponsors/iocdf.svg"
             alt={t('iocdfTitle')}
-            className="grayscale hover:grayscale-0"
+            className="grayscale group-hover:grayscale-0"
             width={465}
             height={196}
+          />
+        </Link>
+        <Link
+          href="https://www.blautoene.at"
+          title={t('blautoeneTitle')}
+          className="group flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+        >
+          <Image
+            src="/sponsors/blautoene.png"
+            alt={t('blautoeneTitle')}
+            className="opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0"
+            width={300}
+            height={70}
+          />
+        </Link>
+        <Link
+          href="https://www.vfx.at/"
+          title={t('viennafxTitle')}
+          className="group flex items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+        >
+          <Image
+            src="/sponsors/viennafx.png"
+            alt={t('viennafxTitle')}
+            className="grayscale group-hover:grayscale-0"
+            width={300}
+            height={141}
           />
         </Link>
       </div>
