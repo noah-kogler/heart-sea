@@ -18,7 +18,25 @@ export default function Home() {
 
   return (
     <>
-      <MainContainer className="items-center">
+      <a
+        className="absolute left-6 top-24 flex h-32 w-32 origin-center -rotate-12 items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100 xl:h-40 xl:w-40"
+        href="http://kck.st/4dciMww"
+        title={t('supportTitle')}
+      >
+        <div className="-mt-5 ml-5 mr-5 text-center text-sm font-bold xl:text-medium">
+          {t('supportRequest')}
+          <div className="mt-2 bg-black">
+            <Image
+              src="/kickstarter.svg"
+              className="fill-black"
+              alt={t('supportKickstarterAlt')}
+              width={1280}
+              height={136}
+            />
+          </div>
+        </div>
+      </a>
+      <MainContainer className="mt-28 items-center xl:mt-0">
         <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
         <h2 className="mb-16 mt-8 text-center font-serif text-2xl uppercase text-white">
           {t('subtitleIntro')}
