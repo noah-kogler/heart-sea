@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <a
         className="absolute left-6 top-24 flex h-44 w-44 origin-center -rotate-12 items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100"
-        href="http://kck.st/4dciMww"
+        href="https://www.kickstarter.com/projects/birgittasfriends/throw-your-heart-into-the-sea-postproduction-and-dcp"
         title={t('supportTitle')}
       >
         <div className="-mt-2 ml-5 mr-5 text-center text-[15px] font-bold">
