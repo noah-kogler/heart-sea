@@ -4,6 +4,7 @@ import Credits from '@/components/content/Credits';
 import Sponsors from '@/components/content/Sponsors';
 import generateMetadataForPage, { LocaleLayoutProps } from '@/utils/generateMetadataForPage';
 import type { Metadata } from 'next';
+import FinancialSupport from '@/components/content/FinancialSupport';
 
 export async function generateMetadata(props: LocaleLayoutProps): Promise<Metadata> {
   return generateMetadataForPage('credits', props);
@@ -14,6 +15,7 @@ export default function CreditsPage() {
     <MainContainer>
       <Sponsors />
       <Credits />
+      <FinancialSupport />
     </MainContainer>
   );
 }

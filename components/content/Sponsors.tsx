@@ -91,6 +91,19 @@ export default function Sponsors() {
             height={141}
           />
         </Link>
+        <Link
+          href="https://www.zweifelsfrei.ch/"
+          title={t('zweifelsfreiTitle')}
+          className="group flex h-[204px] items-center rounded-lg bg-white bg-opacity-85 p-8 hover:bg-opacity-100"
+        >
+          <Image
+            src="/sponsors/zweifelsfrei.png"
+            alt={t('zweifelsfreiTitle')}
+            className="grayscale group-hover:grayscale-0"
+            width={450}
+            height={108}
+          />
+        </Link>
       </div>
     </>
   );

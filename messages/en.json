@@ -26,7 +26,8 @@
     "ooeTitle": "Land Oberösterreich Kultur",
     "phOoeTitle": "Pädagogische Hochschule Oberösterreich",
     "blautoeneTitle": "Blautöne Audio Postproduction",
-    "viennafxTitle": "vienna fx POSTPRODUCTION"
+    "viennafxTitle": "vienna fx POSTPRODUCTION",
+    "zweifelsfreiTitle": "Zweifelsfrei | Befreie dich von deinem Zwang | OCD"
   },
   "ContactPage": {
     "title": "Contact",
@@ -62,5 +63,8 @@
     "contactLabel": "Contact",
     "closeMenuLabel": "Close menu",
     "openMenuLabel": "Open menu"
+  },
+  "FinancialSupport": {
+    "title": "Financial Support"
   }
 }
