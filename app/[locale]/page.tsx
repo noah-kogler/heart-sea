@@ -18,27 +18,6 @@ export default function Home() {
 
   return (
     <>
-      <a
-        className="absolute left-6 top-24 flex h-44 w-44 origin-center -rotate-12 items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100"
-        href="https://www.kickstarter.com/projects/birgittasfriends/throw-your-heart-into-the-sea-postproduction-and-dcp"
-        title={t('supportTitle')}
-      >
-        <div className="-mt-2 ml-5 mr-5 text-center text-[15px] font-bold">
-          {t('supportRequest')}
-          <br />
-          {t('supportRequest2')}
-          <div className="mb-1.5 mt-4 bg-black">
-            <Image
-              src="/kickstarter.svg"
-              className="fill-black"
-              alt={t('supportKickstarterAlt')}
-              width={1280}
-              height={136}
-            />
-          </div>
-          {t('supportCampaign')}
-        </div>
-      </a>
       <MainContainer className="mt-36 items-center xl:mt-0">
         <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
         <h2 className="mb-16 mt-8 text-center font-serif text-2xl uppercase text-white">
