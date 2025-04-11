@@ -5,7 +5,7 @@ import MainContainer from '@/components/MainContainer';
 import Prose from '@/components/Prose';
 import { mdiPlay } from '@mdi/js';
 import Icon from '@mdi/react';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import generateMetadataForPage, { LocaleLayoutProps } from '@/utils/generateMetadataForPage';
 import type { Metadata } from 'next';
 
@@ -18,6 +18,25 @@ export default function Home() {
 
   return (
     <>
+      <Link
+        className="absolute left-6 top-24 flex h-44 w-44 origin-center -rotate-12 items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100 2xl:h-64 2xl:w-64"
+        href="/screenings"
+      >
+        <div className="mx-5 mt-3 text-center text-[14px] font-bold 2xl:text-[20px]">
+          {t.rich('premiere', {
+            logo: () => (
+              <div className="my-2 2xl:my-4">
+                <Image
+                  src="/crossing-europe-white.svg"
+                  alt="Crossing Europe"
+                  width={1280}
+                  height={136}
+                />
+              </div>
+            ),
+          })}
+        </div>
+      </Link>
       <MainContainer className="mt-36 items-center xl:mt-0">
         <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
         <h2 className="mb-16 mt-8 text-center font-serif text-2xl uppercase text-white">
