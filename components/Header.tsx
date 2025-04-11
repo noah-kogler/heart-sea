@@ -21,6 +21,7 @@ export default function Header() {
   const menuItems = [
     { label: t('homeLabel'), href: '/' },
     { label: t('trailerLabel'), href: '/trailer' },
+    { label: t('screeningsLabel'), href: '/screenings' },
     { label: t('creditsLabel'), href: '/credits' },
     { label: t('contactLabel'), href: '/contact' },
   ];
