@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Link
-        className="absolute left-6 top-24 flex h-44 w-44 origin-center -rotate-12 items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100 2xl:h-64 2xl:w-64"
+        className="group absolute left-6 top-24 flex h-44 w-44 origin-center -rotate-12 items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100 2xl:h-64 2xl:w-64"
         href="/screenings"
       >
         <div className="mx-5 mt-3 text-center text-[14px] font-bold 2xl:text-[20px]">
@@ -33,6 +33,12 @@ export default function Home() {
                   height={136}
                 />
               </div>
+            ),
+            link: (child) => (
+              <>
+                <br />
+                <a className="group-hover:underline">{child}</a>
+              </>
             ),
           })}
         </div>
