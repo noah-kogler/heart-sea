@@ -10,7 +10,9 @@
     "subjectImageAlt": "Subject image",
     "trailerLabel": "Trailer",
     "text": "Eric Schirl and Christian Kogler examine OCD (Obsessive Compulsive Disorder) as a coping strategy and explore the human dilemma of uncertainty. In four chapters and in talks with people in various countries, the documentary film shines a light on the human psyche and different means of achieving at least apparent security. We get insights into personal and collective strategies for risk aversion, spiritual interpretations and possible solutions. In calm, reflective images, the film invites a deep contemplation of the interplay among the internal and external influences in our lives, and heightens our awareness of them. (Ines Ingerle, Crossing Europe Film Festival)",
-    "premiere": "World premiere <logo></logo> Linz, 1.5.2025 19:00 <link>Details</link>"
+    "premiereHead": "World premiere",
+    "premiereDate": "Linz, 1.5.2025 19:00",
+    "premiereDetails": "Details"
   },
   "Trailer": {
     "title": "Trailer"
