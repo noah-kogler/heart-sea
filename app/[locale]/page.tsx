@@ -67,6 +67,22 @@ export default function Home() {
         <Prose className="mt-16 text-center">
           <p>{t('text')}</p>
         </Prose>
+        <Prose className="mt-16 text-center">
+          <p>
+            {t.rich('birgittasFriends', {
+              link: (content) => (
+                <a href="https://www.birgittasfriends.com" target="_blank" rel="noreferrer">
+                  {content}
+                </a>
+              ),
+              linkChr: (content) => (
+                <a href="https://www.christiankogler.at/" target="_blank" rel="noreferrer">
+                  {content}
+                </a>
+              ),
+            })}
+          </p>
+        </Prose>
       </MainContainer>
     </>
   );
