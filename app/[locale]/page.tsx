@@ -18,29 +18,6 @@ export default function Home() {
 
   return (
     <>
-      <a
-        className="group absolute left-6 top-24 flex h-44 w-44 origin-center -rotate-12 cursor-pointer items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100 2xl:h-64 2xl:w-64"
-        href="https://www.crossingeurope.at/film/wirf_dein_herz_ins_meer"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div className="mx-5 mt-3 text-center text-[14px] font-bold 2xl:text-[20px]">
-          <div>{t('premiereHead')}</div>
-          <div className="my-2 2xl:my-4">
-            <Image
-              src="/crossing-europe-white.svg"
-              alt="Crossing Europe"
-              className="h-[33px] w-[134px] 2xl:h-[54px] 2xl:w-[216px]"
-              width={293}
-              height={73}
-            />
-          </div>
-          <div>{t('premiereDate')}</div>
-          <div>
-            <div className="group-hover:underline">{t('premiereDetails')}</div>
-          </div>
-        </div>
-      </a>
       <MainContainer className="mt-36 items-center xl:mt-0">
         <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
         <h2 className="mb-16 mt-8 text-center font-serif text-2xl uppercase text-white">
