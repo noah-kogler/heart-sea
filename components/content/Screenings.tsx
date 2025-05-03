@@ -3,6 +3,7 @@ import ScreeningsDe from '@/components/content/de/Screenings.mdx';
 import ScreeningsEn from '@/components/content/en/Screenings.mdx';
 import React from 'react';
 import Prose from '@/components/Prose';
+import CrossingEuropeImage from '@/components/content/CrossingEuropeImage';
 
 function CrossingEuropeLink() {
   return (
@@ -16,7 +17,7 @@ function CrossingEuropeLink() {
 
 export default function Screenings() {
   const locale = useLocale();
-  const components = { CrossingEuropeLink };
+  const components = { CrossingEuropeLink, CrossingEuropeImage };
   return (
     <Prose className="text-center">
       {locale === 'de' ? (
