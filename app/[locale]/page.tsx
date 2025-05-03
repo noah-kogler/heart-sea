@@ -43,6 +43,16 @@ export default function Home() {
         </Link>
         <Prose className="mt-16 text-center">
           <p>{t('text')}</p>
+          <hr />
+        </Prose>
+        <Prose className="mt-16 w-full text-center">
+          <h4>{t('soundtrackTitle')}</h4>
+          <p>
+            <a href="https://listen.music-hub.com/39v1vS" target="_blank" rel="noreferrer">
+              {t('soundtrack')}
+            </a>
+          </p>
+          <hr />
         </Prose>
         <Prose className="mt-16 text-center">
           <p>
