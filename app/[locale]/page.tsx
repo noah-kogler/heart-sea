@@ -8,6 +8,7 @@ import Icon from '@mdi/react';
 import { Link } from '@/navigation';
 import generateMetadataForPage, { LocaleLayoutProps } from '@/utils/generateMetadataForPage';
 import type { Metadata } from 'next';
+import SoundtrackLink from '@/components/content/SoundtrackLink';
 
 export async function generateMetadata(props: LocaleLayoutProps): Promise<Metadata> {
   return generateMetadataForPage('', props);
@@ -48,9 +49,7 @@ export default function Home() {
         <Prose className="mt-16 w-full text-center">
           <h4>{t('soundtrackTitle')}</h4>
           <p>
-            <a href="https://listen.music-hub.com/39v1vS" target="_blank" rel="noreferrer">
-              {t('soundtrack')}
-            </a>
+            <SoundtrackLink />
           </p>
           <hr />
         </Prose>
