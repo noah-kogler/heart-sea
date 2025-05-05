@@ -19,13 +19,22 @@ export default function Home() {
 
   return (
     <>
-      <MainContainer className="mt-36 items-center xl:mt-0">
+      <MainContainer className="items-center">
         <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
-        <h2 className="mb-16 mt-8 text-center font-serif text-2xl uppercase text-white">
+        <h2 className="mb-8 mt-8 text-center font-serif text-2xl uppercase text-white">
           {t('subtitleIntro')}
           <br />
           {t('subtitleNames')}
         </h2>
+        <a href="https://www.crossingeurope.at/" target="_blank" rel="noreferrer">
+          <Image
+            src="/crossing-europe-official-selection.svg"
+            width={199}
+            height={107}
+            alt="Crossing Europe 2025 - Official Selection"
+            className="mb-16 opacity-80 hover:opacity-100"
+          />
+        </a>
         <Link href="/trailer" className="group rounded-full">
           <div className="relative">
             <Image
