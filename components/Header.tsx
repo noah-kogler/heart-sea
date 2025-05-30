@@ -22,6 +22,7 @@ export default function Header() {
     { label: t('homeLabel'), href: '/' },
     { label: t('trailerLabel'), href: '/trailer' },
     { label: t('screeningsLabel'), href: '/screenings' },
+    { label: t('pressLabel'), href: '/press' },
     { label: t('creditsLabel'), href: '/credits' },
     { label: t('contactLabel'), href: '/contact' },
   ];

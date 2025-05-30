@@ -33,6 +33,11 @@
     "title": "Contact",
     "backLinkTitle": "Back to main page"
   },
+  "PressPage": {
+    "title": "Press Review",
+    "ooeNachrichten": "OÖ Nachrichten from Monday 28.04.2025",
+    "kulturbericht": "Oberösterreichischer Kulturbericht"
+  },
   "ContactForm": {
     "emailLabel": "Email",
     "emailPlaceholder": "jane@doe.com",
@@ -60,6 +65,7 @@
     "homeLabel": "Home",
     "trailerLabel": "Trailer",
     "creditsLabel": "Credits",
+    "pressLabel": "Press Review",
     "contactLabel": "Contact",
     "screeningsLabel": "Screenings",
     "closeMenuLabel": "Close menu",

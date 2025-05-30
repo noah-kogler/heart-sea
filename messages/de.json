@@ -33,6 +33,11 @@
     "title": "Kontakt",
     "backLinkTitle": "Zurück zur Hauptseite"
   },
+  "PressPage": {
+    "title": "Pressespiegel",
+    "ooeNachrichten": "OÖ Nachrichten vom Montag 28.04.2025",
+    "kulturbericht": "Oberösterreichischer Kulturbericht"
+  },
   "ContactForm": {
     "emailLabel": "E-Mail",
     "emailPlaceholder": "marta@muster.com",
@@ -61,6 +66,7 @@
     "trailerLabel": "Trailer",
     "creditsLabel": "Credits",
     "contactLabel": "Kontakt",
+    "pressLabel": "Pressespiegel",
     "screeningsLabel": "Vorführungen",
     "closeMenuLabel": "Menü öffnen",
     "openMenuLabel": "Menü schließen"
