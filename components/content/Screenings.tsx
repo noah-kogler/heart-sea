@@ -5,6 +5,7 @@ import React from 'react';
 import Prose from '@/components/Prose';
 import CrossingEuropeImage from '@/components/content/CrossingEuropeImage';
 import WelsImages from '@/components/content/WelsImages';
+import KatsdorfImage from '@/components/content/KatsdorfImage';
 
 function CrossingEuropeLink() {
   return (
@@ -18,7 +19,7 @@ function CrossingEuropeLink() {
 
 export default function Screenings() {
   const locale = useLocale();
-  const components = { CrossingEuropeLink, CrossingEuropeImage, WelsImages };
+  const components = { CrossingEuropeLink, CrossingEuropeImage, KatsdorfImage, WelsImages };
   return (
     <Prose className="text-center">
       {locale === 'de' ? (
