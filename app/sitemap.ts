@@ -30,6 +30,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
+      url: 'https://www.throwyourheartintothesea.com/en/press',
+      lastModified: new Date(),
+      alternates: {
+        languages: {
+          de: 'https://www.throwyourheartintothesea.com/de/press',
+        },
+      },
+    },
+    {
       url: 'https://www.throwyourheartintothesea.com/en/contact',
       lastModified: new Date(),
       alternates: {
