@@ -20,6 +20,7 @@ export default function DownloadLink({
   return (
     <a
       href={href}
+      download
       className={classNames(
         'group mx-auto flex items-center rounded-lg border-1 border-gray-500 backdrop-blur-md hover:border-gray-200',
         {
