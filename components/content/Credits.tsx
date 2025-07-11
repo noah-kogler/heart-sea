@@ -9,7 +9,7 @@ export default function Credits() {
   const locale = useLocale();
   const components = { SoundtrackLink };
   return (
-    <Prose className="mt-24 text-center">
+    <Prose className="text-center">
       {locale === 'de' ? (
         <CreditsDe components={components} />
       ) : (

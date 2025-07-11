@@ -7,7 +7,7 @@ export default function FinancialSupport() {
   const t = useTranslations('FinancialSupport');
   const sortedNames = names.sort((a, b) => ('' + a).localeCompare('' + b));
   return (
-    <Prose className="mt-24 text-center prose-ul:list-none">
+    <Prose className="text-center prose-ul:list-none">
       <h3>{t('title')}</h3>
       <ul>
         {sortedNames.map((name) => (

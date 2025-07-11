@@ -16,6 +16,11 @@
   "Trailer": {
     "title": "Trailer"
   },
+  "TrailerPage": {
+    "download": "Download",
+    "trailer7Mbit": "Trailer mp4, 7mbit",
+    "trailer30Mbit": "Trailer mp4, 30mbit"
+  },
   "SoundtrackLink": {
     "label": "“Fear Not” by Phiya Helena"
   },
@@ -33,10 +38,30 @@
     "title": "Contact",
     "backLinkTitle": "Back to main page"
   },
-  "PressPage": {
-    "title": "Press Review",
-    "ooeNachrichten": "OÖ Nachrichten from Monday 28.04.2025",
-    "kulturbericht": "Oberösterreichischer Kulturbericht"
+  "DownloadsPage": {
+    "title": "Downloads",
+    "pressKit": "full press-kit",
+    "stills": "Stills",
+    "biographies": "Biographies",
+    "biographyChristianTitle": "Christian Kogler",
+    "biographyChristian": "Christian Kogler was born in Austria in 1962. Between the age of 14 and 28 OCD dominated his life. A longer stay on the Hebridean island of Iona on the west coast of Scotland started a healing process that led him to an independent life. He graduated from 2 universities and works as a filmmaker and university teacher now in Linz in Austria. He runs a student TV and radio station and also published 3 children crime stories (in German). 2021 he published his first feature documentary film „Birgitta’s Friends“. “Throw Your Heart Into The Sea” is his second full lenght feature documentary film.",
+    "biographyEricTitle": "Eric Schirl",
+    "biographyEric": "Eric Schirl was born in 1997 in Linz, Austria and joined the team behind the feature film “Birgitta's Friends” (Christian Kogler, 2021) after working on several short films. For this documentary, he was responsible for editing with Christian Kogler. “Throw Your Heart Into The Sea” is Eric Schirls directorial debut, which he produced in collaboration with Christian Kogler. Alongside his work as a filmmaker, Eric Schirl studies and works at the Institute for German Studies at the University of Vienna, and runs a film podcast called “Filmseiterl”.",
+    "biographyImg1Alt": "Biography Image 1",
+    "biographyImg2Alt": "Biography Image 2",
+    "synopsis": "Synopsis",
+    "synopsisText": "Eric Schirl and Christian Kogler look into the role of obsessive-compulsive disorders as coping mechanisms and explore the human dilemma of uncertainty. In four chapters and in conversations with several people, their documentary sheds light on the psyche and different strategies to achieve security (at least a perceived one). We are provided insights into personal and collective mechanisms aimed at risk minimization, spiritual interpretations, and possible ways out. Using calm, reflective images, the film opens up a space for deeper meditations on the interaction of internal worlds and external influences, sharpening our awareness of this matter. (Ines Ingerle, Crossing Europe Film Festival)",
+    "posters": "Posters",
+    "posterAlt": "Poster",
+    "posterSpecialAlt": "Poster Special Edition",
+    "posterDownload": "Poster",
+    "posterSpecialDownload": "Poster Special Edition",
+    "press": "Press Review",
+    "pressOoeNachrichten": "OÖ Nachrichten from Monday 28.04.2025",
+    "pressKulturbericht": "Oberösterreichischer Kulturbericht",
+    "trailer": "Trailer",
+    "trailer7Mbit": "Trailer mp4, 7mbit",
+    "trailer30Mbit": "Trailer mp4, 30mbit"
   },
   "ContactForm": {
     "emailLabel": "Email",
@@ -65,7 +90,7 @@
     "homeLabel": "Home",
     "trailerLabel": "Trailer",
     "creditsLabel": "Credits",
-    "pressLabel": "Press Review",
+    "downloadsLabel": "Downloads & Info",
     "contactLabel": "Contact",
     "screeningsLabel": "Screenings",
     "closeMenuLabel": "Close menu",
