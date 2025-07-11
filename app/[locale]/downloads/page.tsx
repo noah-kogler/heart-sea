@@ -42,7 +42,7 @@ export default function DownloadsPage() {
       <Prose className="text-center">
         <h3>{t('stills')}</h3>
       </Prose>
-      <ul className="mt-6 grid grid-cols-3 gap-x-5 gap-y-7">
+      <ul className="mt-6 grid grid-cols-1 gap-x-5 gap-y-7 lg:grid-cols-3">
         {images.map((img) => (
           <li key={img.number} className="flex flex-col items-center gap-2">
             <a href={`/downloads/stills/web/wdhim-still-${img.number}.jpg`}>
@@ -83,7 +83,7 @@ export default function DownloadsPage() {
       <Prose className="mt-8 text-center">
         <h4>{t('biographyChristianTitle')}</h4>
       </Prose>
-      <div className="m-0 mt-6 flex gap-x-6">
+      <div className="m-0 mt-6 flex flex-col items-center gap-6 lg:flex-row">
         <Image
           src="/downloads/biographies/bio-1.jpg"
           alt={t('biographyImg1Alt')}
@@ -96,7 +96,7 @@ export default function DownloadsPage() {
       <Prose className="mt-8 text-center">
         <h4>{t('biographyEricTitle')}</h4>
       </Prose>
-      <div className="mt-6 flex gap-x-6">
+      <div className="m-0 mt-6 flex flex-col items-center gap-6 lg:flex-row">
         <Prose className="text-justify">{t('biographyEric')}</Prose>
         <Image
           src="/downloads/biographies/bio-2.jpg"

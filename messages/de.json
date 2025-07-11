@@ -18,8 +18,8 @@
   },
   "TrailerPage": {
     "download": "Download",
-    "trailer7Mbit": "Trailer mp4, 7mbit",
-    "trailer30Mbit": "Trailer mp4, 30mbit"
+    "trailer7Mbit": "Trailer mp4, 7 mbit",
+    "trailer30Mbit": "Trailer mp4, 30 mbit"
   },
   "SoundtrackLink": {
     "label": "“Fear Not” von Phiya Helena"
@@ -54,14 +54,14 @@
     "posters": "Plakate",
     "posterAlt": "Plakat",
     "posterSpecialAlt": "Plakat Special Edition",
-    "posterDownload": "Download Poster - Print PDF",
-    "posterSpecialDownload": "Download Poster Special Edition - Print PDF",
+    "posterDownload": "Plakat",
+    "posterSpecialDownload": "Plakat Special Edition",
     "press": "Pressespiegel",
     "pressOoeNachrichten": "OÖ Nachrichten vom Montag 28.04.2025",
     "pressKulturbericht": "Oberösterreichischer Kulturbericht",
     "trailer": "Trailer",
-    "trailer7Mbit": "Download MP4 7mbit",
-    "trailer30Mbit": "Download MP4 30mbit"
+    "trailer7Mbit": "Trailer mp4, 7 mbit",
+    "trailer30Mbit": "Trailer mp4, 30 mbit"
   },
   "ContactForm": {
     "emailLabel": "E-Mail",
