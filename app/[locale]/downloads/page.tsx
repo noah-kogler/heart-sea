@@ -1,6 +1,6 @@
 import generateMetadataForPage, { LocaleLayoutProps } from '@/utils/generateMetadataForPage';
 import type { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import MainContainer from '@/components/MainContainer';
 import Prose from '@/components/Prose';
 import Heading from '@/components/Heading';
@@ -16,6 +16,7 @@ export async function generateMetadata(props: LocaleLayoutProps): Promise<Metada
 
 export default function DownloadsPage() {
   const t = useTranslations('DownloadsPage');
+  const locale = useLocale();
   const images = [
     { number: 1, webSize: '156 kB', printSize: '4.4 MB' },
     { number: 2, webSize: '158 kB', printSize: '5 MB' },
@@ -33,10 +34,10 @@ export default function DownloadsPage() {
         <Heading>{t('title')}</Heading>
       </Prose>
       <DownloadLink
-        href="https://www.christiankogler.at/wdhim-downloads/press-kit.zip"
+        href={`https://www.christiankogler.at/wdhim-downloads/press-kit-${locale}.zip`}
         icon={mdiFolderZip}
         label={t('pressKit')}
-        size="793 MB"
+        size="47.6 MB"
       />
       <hr className="my-8 h-px border-0 bg-gray-600" />
       <Prose className="text-center">
@@ -76,6 +77,15 @@ export default function DownloadsPage() {
           </li>
         ))}
       </ul>
+      {locale === 'de' && (
+        <>
+          <Line />
+          <Prose className="text-center">
+            <h3>{t('pressTextTitle')}</h3>
+            <p className="whitespace-pre-line text-justify">{t('pressText')}</p>
+          </Prose>
+        </>
+      )}
       <Line />
       <Prose className="text-center">
         <h3>{t('biographies')}</h3>
