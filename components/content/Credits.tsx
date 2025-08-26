@@ -4,10 +4,11 @@ import CreditsEn from '@/components/content/en/Credits.mdx';
 import React from 'react';
 import Prose from '@/components/Prose';
 import SoundtrackLink from '@/components/content/SoundtrackLink';
+import Webhosting from '@/components/content/Webhosting';
 
 export default function Credits() {
   const locale = useLocale();
-  const components = { SoundtrackLink };
+  const components = { SoundtrackLink, Webhosting };
   return (
     <Prose className="text-center">
       {locale === 'de' ? (
