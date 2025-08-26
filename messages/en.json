@@ -63,7 +63,9 @@
     "pressKulturbericht": "Oberösterreichischer Kulturbericht",
     "trailer": "Trailer",
     "trailer7Mbit": "Trailer mp4, 7 mbit",
-    "trailer30Mbit": "Trailer mp4, 30 mbit"
+    "trailer30Mbit": "Trailer mp4, 30 mbit",
+    "dcpTitle": "Digital Cinema Package (DCP)",
+    "dcpText": "Please <contact>drop me a message</contact> to schedule a screening and request the DCP of the trailer or the movie!"
   },
   "ContactForm": {
     "emailLabel": "Email",

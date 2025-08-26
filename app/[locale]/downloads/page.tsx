@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { mdiFileJpgBox, mdiFilePdfBox, mdiFilePngBox, mdiFolderZip, mdiVideoBox } from '@mdi/js';
 import Line from '@/components/Line';
 import DownloadLink from '@/components/DownloadLink';
+import { Link } from '@/navigation';
 
 export async function generateMetadata(props: LocaleLayoutProps): Promise<Metadata> {
   return generateMetadataForPage('downloads', props);
@@ -39,7 +40,16 @@ export default function DownloadsPage() {
         label={t('pressKit')}
         size="47.6 MB"
       />
-      <hr className="my-8 h-px border-0 bg-gray-600" />
+      <Line />
+      <Prose className="text-center">
+        <h3>{t('dcpTitle')}</h3>
+        <p>
+          {t.rich('dcpText', {
+            contact: (content) => <Link href="/contact">{content}</Link>,
+          })}
+        </p>
+      </Prose>
+      <Line />
       <Prose className="text-center">
         <h3>{t('stills')}</h3>
       </Prose>
