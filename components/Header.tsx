@@ -28,7 +28,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="text-foreground dark">
+    <div className="text-foreground dark">
       <Navbar
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
@@ -67,7 +67,7 @@ export default function Header() {
           ))}
         </NavbarMenu>
       </Navbar>
-    </header>
+    </div>
   );
 }
 

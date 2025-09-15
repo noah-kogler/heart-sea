@@ -9,7 +9,7 @@ import Header from '@/components/Header';
 import classNames from 'classnames';
 import { LocaleLayoutProps } from '@/utils/generateMetadataForPage';
 
-const openSans = Open_Sans({ subsets: ['latin'] });
+const openSans = Open_Sans({ subsets: ['latin'], adjustFontFallback: false });
 
 export default async function LocaleLayout({
   children,
