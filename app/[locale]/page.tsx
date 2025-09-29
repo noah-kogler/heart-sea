@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </div>
         </Link>
-        <Prose className="mt-16 text-center">
+        <Prose className="mt-16 whitespace-pre-line text-center">
           <p>{t('text')}</p>
           <hr />
         </Prose>
