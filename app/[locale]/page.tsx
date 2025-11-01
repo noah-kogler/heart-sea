@@ -19,15 +19,6 @@ export default function Home() {
 
   return (
     <>
-      <Link
-        className="group absolute left-6 top-24 flex size-32 origin-center -rotate-12 cursor-pointer items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100 2xl:size-40"
-        href="/screenings"
-      >
-        <div className="mx-5 text-center text-[14px] 2xl:text-[18px]">
-          <div className="font-bold">{t('cinemaReleaseBadgeHead')}</div>
-          <div className="group-hover:underline">{t('cinemaReleaseBadge')}</div>
-        </div>
-      </Link>
       <MainContainer className="mt-24 items-center xl:mt-0">
         <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
         <h2 className="mb-8 mt-8 text-center font-serif text-2xl uppercase text-white">
