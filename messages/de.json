@@ -67,6 +67,10 @@
     "dcpTitle": "Digital Cinema Package (DCP)",
     "dcpText": "Bitte <contact>schreibe mir eine Nachricht</contact> um eine Aufführung zu vereinbaren und das DCP vom Trailer oder vom kompletten Film zu erhalten!"
   },
+  "SupportPage": {
+    "title": "Unterstützung bei OCD",
+    "text": "Mittlerweile gibt es viele Hilfsangebote für Betroffene und Angehörige bei OCD (Zwangserkrankung). Wir haben hier einige zusammengestellt (regional und überregional)."
+  },
   "ContactForm": {
     "emailLabel": "E-Mail",
     "emailPlaceholder": "marta@muster.com",
@@ -97,6 +101,7 @@
     "downloadsLabel": "Downloads & Info",
     "contactLabel": "Kontakt",
     "screeningsLabel": "Vorführungen",
+    "supportLabel": "OCD-Unterstützung",
     "closeMenuLabel": "Menü öffnen",
     "openMenuLabel": "Menü schließen"
   },

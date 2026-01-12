@@ -24,6 +24,7 @@ export default function Header() {
     { label: t('screeningsLabel'), href: '/screenings' },
     { label: t('downloadsLabel'), href: '/downloads' },
     { label: t('creditsLabel'), href: '/credits' },
+    { label: t('supportLabel'), href: '/support' },
     { label: t('contactLabel'), href: '/contact' },
   ];
 
@@ -35,14 +36,11 @@ export default function Header() {
         height="4rem"
         className="opacity-75 transition-opacity hover:opacity-100"
       >
-        <NavbarContent>
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? t('closeMenuLabel') : t('openMenuLabel')}
-            className="sm:hidden"
-          />
+        <NavbarContent className="lg:hidden">
+          <NavbarMenuToggle aria-label={isMenuOpen ? t('closeMenuLabel') : t('openMenuLabel')} />
         </NavbarContent>
 
-        <NavbarContent className="hidden gap-8 sm:flex" justify="center">
+        <NavbarContent className="hidden gap-8 lg:flex" justify="center">
           {menuItems.map((item, index) => (
             <NavbarItem key={`${item}-${index}`}>
               <NavBarLink label={item.label} href={item.href} active={pathname === item.href} />

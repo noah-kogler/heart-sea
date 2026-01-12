@@ -67,6 +67,10 @@
     "dcpTitle": "Digital Cinema Package (DCP)",
     "dcpText": "Please <contact>drop me a message</contact> to schedule a screening and request the DCP of the trailer or the movie!"
   },
+  "SupportPage": {
+    "title": "OCD-Support",
+    "text": "Support if you have OCD or you know somebody with OCD."
+  },
   "ContactForm": {
     "emailLabel": "Email",
     "emailPlaceholder": "jane@doe.com",
@@ -97,6 +101,7 @@
     "downloadsLabel": "Downloads & Info",
     "contactLabel": "Contact",
     "screeningsLabel": "Screenings",
+    "supportLabel": "OCD-Support",
     "closeMenuLabel": "Close menu",
     "openMenuLabel": "Open menu"
   },

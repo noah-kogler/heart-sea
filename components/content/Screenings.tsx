@@ -19,7 +19,7 @@ export default function Screenings() {
   const locale = useLocale();
   const components = { CrossingEuropeLink, CrossingEuropeImage };
   return (
-    <Prose className="text-center">
+    <Prose className="text-center prose-ul:list-none">
       {locale === 'de' ? (
         <ScreeningsDe components={components} />
       ) : (
