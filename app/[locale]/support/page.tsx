@@ -18,6 +18,12 @@ export default function SupportPage() {
   return (
     <MainContainer>
       <Prose className="text-center prose-ul:list-none">
+        <h3>{t('omwTourTitle')}</h3>
+        <p>{t('omwTourText')}</p>
+        <p>
+          <Link href="https://gofund.me/1558b1607">{t('omwTourLink')}</Link>
+        </p>
+        <Line />
         <h3>{t('title')}</h3>
         <p>{t('text')}</p>
         {locale === 'de' ? (

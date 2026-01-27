@@ -69,7 +69,10 @@
   },
   "SupportPage": {
     "title": "Unterstützung bei OCD",
-    "text": "Mittlerweile gibt es viele Hilfsangebote für Betroffene und Angehörige bei OCD (Zwangserkrankung). Wir haben hier einige zusammengestellt (regional und überregional)."
+    "text": "Mittlerweile gibt es viele Hilfsangebote für Betroffene und Angehörige bei OCD (Zwangserkrankung). Wir haben hier einige zusammengestellt (regional und überregional).",
+    "omwTourTitle": "OMW World Tour",
+    "omwTourText": "Wir planen eine Welt-Tournee um auf OCD aufmerksam zu machen und die Mentale Gesundheit und das Wohlbefinden von Betroffenen zu steigern.",
+    "omwTourLink": "Spenden"
   },
   "ContactForm": {
     "emailLabel": "E-Mail",
