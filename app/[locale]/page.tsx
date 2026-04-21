@@ -19,6 +19,24 @@ export default function Home() {
 
   return (
     <>
+      <div className="group absolute left-6 top-24 flex size-32 origin-center -rotate-12 cursor-pointer items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100 2xl:size-40">
+        <div className="mx-5 text-center text-[14px] 2xl:text-[18px]">
+          <p>
+            <Link
+              href="https://www.vodclub.online/film/wirf-dein-herz-ins-meer/"
+              className="font-bold hover:underline"
+              target="_blank"
+            >
+              {t('vodBadgeLink')}
+            </Link>
+          </p>
+          <p>
+            <Link href="#stream" className="text-sm hover:underline">
+              {t('vodBadgeInfo')}
+            </Link>
+          </p>
+        </div>
+      </div>
       <MainContainer className="mt-24 items-center xl:mt-0">
         <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
         <h2 className="mb-8 mt-8 text-center font-serif text-2xl uppercase text-white">
@@ -56,7 +74,7 @@ export default function Home() {
           <hr />
         </Prose>
         <Prose className="mt-16 whitespace-pre-line text-center">
-          <h4 id="#stream">{t('vodTitle')}</h4>
+          <h4 id="stream">{t('vodTitle')}</h4>
           <p>
             {t.rich('vodText', {
               vodLink: (content) => (
