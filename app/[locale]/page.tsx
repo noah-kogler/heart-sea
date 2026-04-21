@@ -55,6 +55,24 @@ export default function Home() {
           <p>{t('text')}</p>
           <hr />
         </Prose>
+        <Prose className="mt-16 whitespace-pre-line text-center">
+          <h4 id="#stream">{t('vodTitle')}</h4>
+          <p>
+            {t.rich('vodText', {
+              vodLink: (content) => (
+                <a
+                  href="https://www.vodclub.online/film/wirf-dein-herz-ins-meer/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {content}
+                </a>
+              ),
+              pdfLink: (content) => <a href="/VOD-guide.pdf">{content}</a>,
+            })}
+          </p>
+          <hr />
+        </Prose>
         <Prose className="mt-16 w-full text-center">
           <h4>{t('soundtrackTitle')}</h4>
           <p>
