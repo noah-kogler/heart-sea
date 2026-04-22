@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import MainContainer from '@/components/MainContainer';
 import Prose from '@/components/Prose';
 import { mdiPlay } from '@mdi/js';
@@ -16,26 +16,35 @@ export async function generateMetadata(props: LocaleLayoutProps): Promise<Metada
 
 export default function Home() {
   const t = useTranslations('Home');
+  const locale = useLocale();
 
   return (
     <>
       <div className="group absolute left-6 top-24 flex size-32 origin-center -rotate-12 cursor-pointer items-center justify-center rounded-full border-3 border-white bg-black bg-opacity-50 drop-shadow-xl hover:bg-opacity-100 2xl:size-40">
-        <div className="mx-5 text-center text-[14px] 2xl:text-[18px]">
-          <p>
-            <Link
-              href="https://www.vodclub.online/film/wirf-dein-herz-ins-meer/"
-              className="font-bold hover:underline"
-              target="_blank"
-            >
+        {locale === 'en' ? (
+          <div className="mx-5 text-center text-[14px] 2xl:text-[18px]">
+            <Link href="#stream" className="font-bold hover:underline">
               {t('vodBadgeLink')}
             </Link>
-          </p>
-          <p>
-            <Link href="#stream" className="text-sm hover:underline">
-              {t('vodBadgeInfo')}
-            </Link>
-          </p>
-        </div>
+          </div>
+        ) : (
+          <div className="mx-5 text-center text-[14px] 2xl:text-[18px]">
+            <p>
+              <Link
+                href="https://www.vodclub.online/film/wirf-dein-herz-ins-meer/"
+                className="font-bold hover:underline"
+                target="_blank"
+              >
+                {t('vodBadgeLink')}
+              </Link>
+            </p>
+            <p>
+              <Link href="#stream" className="text-sm hover:underline">
+                {t('vodBadgeInfo')}
+              </Link>
+            </p>
+          </div>
+        )}
       </div>
       <MainContainer className="mt-24 items-center xl:mt-0">
         <h1 className="text-center font-serif text-7xl uppercase">{t('title')}</h1>
